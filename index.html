@@ -4,73 +4,61 @@
 	<meta charset="UTF-8">
 	<title>HumanCapital</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Hind:400,500,700|Montserrat:700,400' rel='stylesheet' type='text/css'>
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 	<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
 	<header class="Header">
-		<nav>
-			<ul class="right">
-				<li><a href=""></a>Home</li>
-				<li><a href=""></a>Acesorías y Servicios</li>
-				<li><a href="http://www.google.com"></a>Nosotros</li>
-				<li><a href=""></a>Historia</li>
-				<li><a href=""></a>Contactenos</li>
+	    <a href="#" class="Header-logo">Logo</a>
+	    <i class="material-icons Header-button" id="burguer-button">menu</i>
+		<nav class="Header-menu" id="menu">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Acesorías y Servicios</a></li>
+				<li><a href="http://www.google.com">Nosotros</a></li>
+				<li><a href="">Contactenos</a></li>
 			</ul>
-		</nav>
+		</nav>		
 	</header>
 
-
-
-	<div id="index-banner" class="parallax-container Home-parallaxOne">
+	
+	<!-- <div id="index-banner" class="parallax-container Home-parallaxOne">
 		    <div class="container">
-		      	<h1 class="">Acesorías y Servicios</h1>
+		      	<h1 class="">ACESORÍAS Y SERVICIOS</h1>
 	        	<h5 class="col s12">Enfocados en Talento Humano</h5>
 		    </div>
 		<div class="parallax">
 			<img class="img-parallax1" src="./images/ofice6.jpg" alt="Unsplashed background img 1">
 		</div>
+	</div> -->
+
+	<div class="Home-img">		
+		<div class="container">
+			<section>
+		      	<h1 class="">ACESORÍAS Y SERVICIOS</h1>
+	        	<h5 class="col s12">Enfocados en Talento Humano</h5>
+			</section>
+		</div>
 	</div>
 
-
 	<div class="container">
-		<div class="section">
-
-		    <!--   Icon Section   -->
-		    <div class="row">
+		<section>
+			<div class="row">
+				
 			    <div class="col s12 m4">
 			        <div class="icon-block">
-			          	<h2 class="center brown-text"><i class="material-icons">security</i></h2>
-			          	<h5 class="center">Estudios de Seguridad</h5>
-
-			          	<p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-			        </div>
-			    </div>
-
-			    <div class="col s12 m4">
-			        <div class="icon-block">
-			          	<h2 class="center brown-text"><i class="material-icons">home</i></h2>
-			          	<h5 class="center">Visitas Domiciliarias</h5>
-
-			          	<p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all.</p>
-			        </div>
-			    </div>
-
-			    <div class="col s12 m4">
-			        <div class="icon-block">
-			          	<h2 class="center brown-text"><i class="material-icons">supervisor_account</i></h2>
+			          	<h2 class="center offmp"><i class="material-icons">show_chart</i></h2>
 			          	<h5 class="center">Asesoria Empresarial</h5>
 
 			          	<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
 			        </div>
 			    </div>
-		    </div>
-			<div class="row">
-				
+
 			    <div class="col s12 m4">
 			        <div class="icon-block">
-			          	<h2 class="center brown-text"><i class="material-icons">show_chart</i></h2>
+			          	<h2 class="center offmp"><i class="material-icons">note_add</i></h2>
 			          	<h5 class="center">Asesoria Contable y Financiera</h5>
 
 			          	<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
@@ -79,31 +67,24 @@
 
 			    <div class="col s12 m4">
 			        <div class="icon-block">
-			          	<h2 class="center brown-text"><i class="material-icons">note_add</i></h2>
-			          	<h5 class="center">Salud Ocupacional</h5>
-
-			          	<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-			        </div>
-			    </div>
-
-			    <div class="col s12 m4">
-			        <div class="icon-block">
-			          	<h2 class="center brown-text"><i class="material-icons">gavel</i></h2>
+			          	<h2 class="center offmp"><i class="material-icons">gavel</i></h2>
 			          	<h5 class="center">Asesoria Jurídica</h5>
-
 			          	<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
 			        </div>
 			    </div>
 			</div>
-		</div>
+		    
+
+		</section>
 	</div>
+	
 
-
-	<div class="parallax-container valign-wrapper">
+	
+	<div class="parallax-container valign-wrapper Home-parallaxTwo">
 		<div class="section no-pad-bot">
 		    <div class="container">
 		      	<div class="row center">
-		        	<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+		        	<h3 class="header col s12 light">Servicios</h3>
 		      	</div>
 		    </div>
 		</div>
@@ -112,19 +93,59 @@
 		</div>
 	</div>
 
+
 	<div class="container">
-		<div class="section">
-
-		    <div class="row">
-		      	<div class="col s12 center">
-		        	<h3><i class="mdi-content-send brown-text"></i></h3>
-		        	<h4>Contact Us</h4>
-		        	<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-		      	</div>
+	    <div class="row Block">
+		    <div class="col s12 m9">
+		        <div class="icon-block">
+		          	<i class="material-icons">security</i>
+		          	<h5 class="center">Visitas Domiciliarias</h5>
+		          	<p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+		        </div>
 		    </div>
+			<div class="col s12 m3 center hide-on-small-only">			
+				<img src="./images/seg.png" alt="" class="Block-img">
+			</div>
+		    
+	    </div>
+	    <hr>
+	    <div class="row Block">
+	    	<div class="col s12 m9">
+	    	    <div class="icon-block">
+	    	      	<i class="material-icons">home</i>
+	    	      	<h5 class="center">Salud Ocupacional</h5>
+	    	      	<p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all.</p>
+	    	    </div>
+	    	</div>
+		    <div class="col s12 m3 center hide-on-small-only">			
+		    	<img src="./images/seg.png" alt="" class="Block-img">
+		    </div>
+	    </div>
+	    <hr>
+	    <div class="row Block">
+		    <div class="col s12 m9">
+		        <div class="icon-block">
+		          	<i class="material-icons">supervisor_account</i>
+		          	<h5 class="center">Estudios de Seguridad</h5>
 
-		</div>
+		          	<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+		        </div>
+		    </div>	    	
+			<div class="col s12 m3 center hide-on-small-only">			
+				<img src="./images/seg.png" alt="" class="Block-img">
+			</div>
+	    </div>
+	    <div class="row">
+	      	<div class="col s12 center">
+	        	<h3><i class="mdi-content-send "></i></h3>
+	        	<h4>Contact Us</h4>
+	        	<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+	      	</div>
+	    </div>
 	</div>
+
+
+	
 
 
 	<div class="parallax-container valign-wrapper">
@@ -141,35 +162,9 @@
 	</div>
 
 	<footer class="page-footer">
-		<div class="container">
-		    <div class="row">
-			    <div class="col l6 s12">
-			        <h5 class="white-text">Company Bio</h5>
-			        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-			    </div>
-			    <div class="col l3 s12">
-			        <h5 class="white-text">Settings</h5>
-			        <ul>
-			          	<li><a class="white-text" href="#!">Link 1</a></li>
-			          	<li><a class="white-text" href="#!">Link 2</a></li>
-			          	<li><a class="white-text" href="#!">Link 3</a></li>
-			          	<li><a class="white-text" href="#!">Link 4</a></li>
-			        </ul>
-			    </div>
-			    <div class="col l3 s12">
-			        <h5 class="white-text">Connect</h5>
-			        <ul>
-			          	<li><a class="white-text" href="#!">Link 1</a></li>
-			          	<li><a class="white-text" href="#!">Link 2</a></li>
-			          	<li><a class="white-text" href="#!">Link 3</a></li>
-			          	<li><a class="white-text" href="#!">Link 4</a></li>
-			        </ul>
-			    </div>
-		    </div>
-		</div>
 		<div class="footer-copyright">
 		    <div class="container">
-		    	Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+		    	Made by <a class=" text-lighten-3" href="http://materializecss.com">Materialize</a>
 		    </div>
 		</div>
 	</footer>
