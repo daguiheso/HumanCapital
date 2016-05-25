@@ -52,10 +52,16 @@ footer.page-footer {
   margin: 0;
 }
 
-html, body {
-  font-family: 'Hind', sans-serif;
-}
 $green : #A4E425;
+$yellow : #ffeb3b;
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+h3 {
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+}
 
 .parallax img {
   width: 1500px;
@@ -66,11 +72,7 @@ $green : #A4E425;
   filter: brightness(90%);
 }
 .material-icons {
-  //color: rgb(75,181,193);
-  //color: rgb(150,202,45);
-  // color: $green;
-  color: #FF6138;
-  text-shadow: 0 1px 2px rgb(5, 5, 5);
+  color: #fdd835;
 }
 
 .vcenter {
@@ -81,10 +83,66 @@ $green : #A4E425;
   padding: 0;
   margin: 0;
 }
+.table-of-contents a {
+  &.active {
+    font-weight: 600;
+    padding-left: 18px;
+    border-bottom: 2px solid rgb(234, 74, 79);
+    border-left: none;
+  }
+  &:hover {
+    color: rgb(168, 168, 168);
+    padding-left: 19px;
+    border-left: 0;
+  }
+}
+.Home-parallax {
+  &One {
+    min-height: 160px;
+    margin: 60px 0 60px 0;
+  }
+  &Two {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    &.parallax-container {
+      line-height: 1.5; 
+    }
+  }
+}
 
+
+.Home-img {
+  background-image: url(../images/city2.jpg);
+  background-color: rgb(70, 97, 115);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  h1 {
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 3px 15px rgb(5, 5, 5);
+    font-family: 'Roboto', sans-serif;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    color: $yellow;
+    text-shadow: 0 3px 15px rgb(5, 5, 5);
+    margin-top: 0;
+    font-size: 2.88rem;
+  }
+  .Arrow {
+    position: absolute;
+    bottom: 22px;
+    font-size: 3rem;
+    left: 50%;
+  }
+}
 .Header {
   text-transform: uppercase;
-  font-size: 16px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   text-align: center;
   &-button {
@@ -110,8 +168,8 @@ $green : #A4E425;
     border-top: 1px solid rgb(221, 221, 221);
     background-color: transparent;
     display: inline-block;
-    box-shadow: none;
     position: fixed;
+    z-index: 2;
     left: 0;
     right: 0;
     background: #fff;
@@ -120,39 +178,17 @@ $green : #A4E425;
       display: inline-block;
       a {
         color: black;
+        font-size: 15px;
       }
     }
   }
   
 }
-.Home-img {
-  background-image: url(../images/ofice6.jpg);
-  background-color: rgb(70, 97, 115);
-  background-position: center;
-  min-height: 100vh;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
+
+.test {
+  background: linear-gradient(to left,#8bc34a,#cddc39);
 }
-.Home-parallax {
-  &One {
-    min-height: 440px;
-    display: flex;
-    align-items: center;
-  }
-  &Two {
-    min-height: 200px;
-    margin: 40px 0 60px 0;
-  }
-}
-h1 {
-  color: #FCFAE1;
-  //color: #F3B562;
-  margin: 0;
-  text-shadow: 0 3px 15px rgb(5, 5, 5);
-  font-family: 'Montserrat', sans-serif;
-}
+
 
 .Block {
   display: flex;
@@ -160,14 +196,18 @@ h1 {
   margin: 20px 0;
   .material-icons {
     font-size: 3em;
-    vertical-align: text-bottom
+    vertical-align: middle;
   }
   h5 {
     display: inline-block;
     margin: 0;
+    vertical-align: middle;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
   }
   &-img {
-    width: 150px;
+    width: 140px;
     border-radius:50%;
   }
 }
@@ -200,7 +240,10 @@ h1 {
           display: block;
           border-bottom: 1px solid #fff;
           &:first-child {
-            border-top: 1px solid #fff
+            border-top: 1px solid #fff;
+          }
+          a {
+            color: #fff;
           }
         }
       }

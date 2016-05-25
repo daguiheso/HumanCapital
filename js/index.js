@@ -2,9 +2,10 @@
   $(function(){
 
     $('.parallax').parallax();
-
+    $('.scrollspy').scrollSpy();
+    // $('#textarea1').val(' ');
+    // $('#textarea1').trigger('autoresize');
   }); // end of document ready
-
   var $burguerButton = document.getElementById('burguer-button');
   var $menu = document.getElementById('menu');
 
@@ -34,4 +35,5 @@
   function hideMenu () {
   	$menu.classList.remove('active')
   }
+
 })(jQuery); // end of jQuery name space

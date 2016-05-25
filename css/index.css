@@ -41,7 +41,12 @@ footer.page-footer {
   margin: 0; }
 
 html, body {
-  font-family: 'Hind', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
+
+h3 {
+  color: #212121;
+  font-family: 'Roboto', sans-serif; }
 
 .parallax img {
   width: 1500px; }
@@ -51,8 +56,7 @@ html, body {
   filter: brightness(90%); }
 
 .material-icons {
-  color: #FF6138;
-  text-shadow: 0 1px 2px #050505; }
+  color: #fdd835; }
 
 .vcenter {
   display: flex;
@@ -62,9 +66,56 @@ html, body {
   padding: 0;
   margin: 0; }
 
+.table-of-contents a.active {
+  font-weight: 600;
+  padding-left: 18px;
+  border-bottom: 2px solid #ea4a4f;
+  border-left: none; }
+
+.table-of-contents a:hover {
+  color: #a8a8a8;
+  padding-left: 19px;
+  border-left: 0; }
+
+.Home-parallaxOne {
+  min-height: 160px;
+  margin: 60px 0 60px 0; }
+
+.Home-parallaxTwo {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); }
+  .Home-parallaxTwo.parallax-container {
+    line-height: 1.5; }
+
+.Home-img {
+  background-image: url(../images/city2.jpg);
+  background-color: #466173;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; }
+  .Home-img h1 {
+    color: #fff;
+    margin: 0;
+    text-shadow: 0 3px 15px #050505;
+    font-family: 'Roboto', sans-serif; }
+  .Home-img h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #ffeb3b;
+    text-shadow: 0 3px 15px #050505;
+    margin-top: 0;
+    font-size: 2.88rem; }
+  .Home-img .Arrow {
+    position: absolute;
+    bottom: 22px;
+    font-size: 3rem;
+    left: 50%; }
+
 .Header {
   text-transform: uppercase;
-  font-size: 16px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   text-align: center; }
   .Header-button {
@@ -88,8 +139,8 @@ html, body {
     border-top: 1px solid #dddddd;
     background-color: transparent;
     display: inline-block;
-    box-shadow: none;
     position: fixed;
+    z-index: 2;
     left: 0;
     right: 0;
     background: #fff; }
@@ -97,32 +148,11 @@ html, body {
       float: none;
       display: inline-block; }
       .Header-menu ul li a {
-        color: black; }
+        color: black;
+        font-size: 15px; }
 
-.Home-img {
-  background-image: url(../images/ofice6.jpg);
-  background-color: #466173;
-  background-position: center;
-  min-height: 100vh;
-  min-height: 60vh;
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px; }
-
-.Home-parallaxOne {
-  min-height: 440px;
-  display: flex;
-  align-items: center; }
-
-.Home-parallaxTwo {
-  min-height: 200px;
-  margin: 40px 0 60px 0; }
-
-h1 {
-  color: #FCFAE1;
-  margin: 0;
-  text-shadow: 0 3px 15px #050505;
-  font-family: 'Montserrat', sans-serif; }
+.test {
+  background: linear-gradient(to left, #8bc34a, #cddc39); }
 
 .Block {
   display: flex;
@@ -130,12 +160,16 @@ h1 {
   margin: 20px 0; }
   .Block .material-icons {
     font-size: 3em;
-    vertical-align: text-bottom; }
+    vertical-align: middle; }
   .Block h5 {
     display: inline-block;
-    margin: 0; }
+    margin: 0;
+    vertical-align: middle;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px; }
   .Block-img {
-    width: 150px;
+    width: 140px;
     border-radius: 50%; }
 
 @media screen and (max-width: 720px) {
@@ -159,5 +193,7 @@ h1 {
         border-bottom: 1px solid #fff; }
         .Header-menu ul li:first-child {
           border-top: 1px solid #fff; }
+        .Header-menu ul li a {
+          color: #fff; }
   h1 {
     font-size: 3rem; } }
