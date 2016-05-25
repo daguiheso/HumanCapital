@@ -82,7 +82,7 @@ h3 {
   margin: 60px 0 60px 0; }
 
 .Home-parallaxTwo {
-  min-height: 600px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   background: rgba(0, 0, 0, 0.5); }
@@ -151,9 +151,6 @@ h3 {
         color: black;
         font-size: 15px; }
 
-.test {
-  background: linear-gradient(to left, #8bc34a, #cddc39); }
-
 .Block {
   display: flex;
   align-items: center;
@@ -172,7 +169,40 @@ h3 {
     width: 140px;
     border-radius: 50%; }
 
-@media screen and (max-width: 720px) {
+.Contact {
+  padding: 0; }
+  .Contact form {
+    margin-bottom: 50px; }
+  .Contact-info {
+    display: flex;
+    justify-content: space-around; }
+    .Contact-info strong {
+      display: block; }
+    .Contact-info a {
+      color: #fff; }
+  .Contact h3 {
+    color: #fff;
+    margin: 70px 0 60px;
+    text-align: center; }
+  .Contact #map {
+    width: 100%;
+    height: 350px;
+    background-color: #CCC;
+    border-radius: 3px; }
+
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 0;
+  overflow: hidden; }
+  footer p {
+    margin: 0;
+    display: inline-block; }
+  footer .Res {
+    float: right; }
+
+@media screen and (max-width: 640px) {
   .Header-button {
     display: block; }
   .Header-menu {
@@ -182,7 +212,12 @@ h3 {
     width: 100%;
     display: flex;
     align-items: center;
-    left: -100%; }
+    left: -100%;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
     .Header-menu.active {
       left: 0; }
     .Header-menu ul {
@@ -197,3 +232,14 @@ h3 {
           color: #fff; }
   h1 {
     font-size: 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .Contact #map {
+    width: 90%;
+    margin: 40px auto; } }
+
+@media screen and (max-width: 500px) {
+  footer p {
+    display: block;
+    float: none !important;
+    text-align: center; } }
