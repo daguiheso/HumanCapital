@@ -173,13 +173,16 @@ h3 {
   padding: 0; }
   .Contact form {
     margin-bottom: 50px; }
+    .Contact form button {
+      margin-top: 20px; }
   .Contact-info {
     display: flex;
     justify-content: space-around; }
     .Contact-info strong {
       display: block; }
     .Contact-info a {
-      color: #fff; }
+      color: #fff;
+      cursor: pointer; }
   .Contact h3 {
     color: #fff;
     margin: 70px 0 60px;
@@ -201,6 +204,14 @@ footer {
     display: inline-block; }
   footer .Res {
     float: right; }
+
+@media screen and (max-width: 820px) {
+  .Contact-info {
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center; }
+    .Contact-info a:nth-child(2) {
+      margin-top: 25px; } }
 
 @media screen and (max-width: 640px) {
   .Header-button {

@@ -212,6 +212,9 @@ h3 {
   padding: 0;
   form {
     margin-bottom: 50px;
+    button {
+      margin-top: 20px;
+    }
   }
   &-info {
     display: flex;
@@ -252,6 +255,16 @@ footer {
   }
 }
 
+@media screen and (max-width:820px) {
+  .Contact-info {
+      justify-content: space-around;
+      flex-direction: column;
+      text-align: center;
+      a:nth-child(2) {
+        margin-top: 25px;
+      }
+  }
+}
 @media screen and (max-width:640px) {
   .Header {
     &-button {
@@ -305,11 +318,9 @@ footer {
 }
 
 @media screen and (max-width:500px) {
-  footer {
-    p {
-      display: block;
-      float: none !important;
-      text-align: center;
-    }
+  footer p {
+    display: block;
+    float: none !important;
+    text-align: center;
   }
 }
