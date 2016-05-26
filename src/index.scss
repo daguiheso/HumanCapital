@@ -40,6 +40,9 @@ width: 100%;
     top: 0;
   }
 }
+.input-field {
+  margin-top: 2rem;
+}
 
 .icon-block {
   padding: 0 15px;
@@ -146,9 +149,9 @@ h3 {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
   text-align: center;
   &-button {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
     border-radius: 50%;
     background: #395667;
     display: inline-block;
@@ -213,7 +216,7 @@ h3 {
   form {
     margin-bottom: 50px;
     button {
-      margin-top: 20px;
+      margin-top: 35px;
     }
   }
   &-info {
@@ -229,7 +232,7 @@ h3 {
   }
   h3 {
     color: #fff;
-    margin: 70px 0 60px;
+    margin: 70px 0 40px;
     text-align: center;
   }
   #map {
