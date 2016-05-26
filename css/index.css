@@ -185,7 +185,8 @@ h3 {
       display: block; }
     .Contact-info a {
       color: #fff;
-      cursor: pointer; }
+      cursor: pointer;
+      margin: 10px; }
   .Contact h3 {
     color: #fff;
     margin: 70px 0 40px;
