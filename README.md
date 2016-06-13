@@ -1,4 +1,4 @@
 # HumanCapital
 HC
  
-Web N & C Humanc
+Web N & C Human capital
